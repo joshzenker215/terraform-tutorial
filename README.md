@@ -6,3 +6,6 @@ I followed the recommendations in the AWS documentation. They assume you have al
 1. Use the SSO wizard to create a default profile
 1. Each time you want to start a session, run `aws sso login`
 1. Run `aws configure list` to see your credentials
+
+## Terraform Tips
+Whenever you add a new module to your configuration, you will need to install it by re-initializing the workspace, e.g. `terraform init`.
